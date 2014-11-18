@@ -1,0 +1,169 @@
+body {
+margin: 0 0 0 0;
+padding: 0 0 0 0;
+border: 0 0 0 0;
+background-color: #DBDBDB;
+}
+
+p {
+text-align: left;
+width: 40%;
+float: left;
+margin: 15px 15px 15px 15px;
+padding: 10px 10px 10px 10px;
+background-color: white;
+font-family: sans-serif;
+}
+
+/*style for accordion content*/
+#content{
+text-align:center;
+width: 40%;
+float: left;
+margin:10px 10px 10px 10%;
+padding: 10px 10px 10px 10px;
+background-color: #DBDBDB;
+}
+
+#lisa {
+float: left;
+width: 17%;
+margin: 15px 15px 15px 15px;
+padding: 0 0 0 0;
+}
+
+ul.temptop {
+float: left;
+width: 16.65%;
+margin: 0 0 0 0;
+padding: 20px 0 20px 0;
+background-color: gray;
+text-align: center;
+color: white;
+}
+
+#cover {
+width: 78%;
+float:left;
+margin: 0 0 0 0;
+border: 0 0 0 0;
+padding: 0 0 0 0;
+}
+
+#donate {
+width: 22%;
+float:right;
+}
+
+.fb-like-box {
+list-style-type: none;
+margin: 0px;
+float: right;
+clear:right;
+height: auto;
+padding: 10px 15px 20px 20px;
+width: 19.5%;
+background-color: #DBDBDB;
+}
+
+#sharebuttons{
+	
+	clear:left,right:
+}
+
+h1 {
+width: 70%;
+text-align: center;
+margin: 0px 0 50px 0;
+padding: 50px 0 0 0 ;
+font-size: 50px;
+}
+
+nav {
+float: clear;
+float: left;
+}
+
+#words {
+width: 100%;
+margin: 0 0 0 0;
+padding: 0 0 0 0 ;
+border: 0 0 0 0;
+}
+/*=======Test menu=========*/
+.myMenu {
+	margin:0;
+	padding:0;
+	
+}
+
+.myMenu li {
+	list-style:none;
+	float:left;
+	font:12px Arial, Helvetica, sans-serif #111;
+}
+
+.myMenu li a:link, .myMenu li a:visited {
+	display:block;
+	text-decoration:none;
+	background-color:#09F;
+	padding: 0.5em 2em;
+	margin:0;
+	color:#111;
+}
+
+.myMenu li a:hover {
+	background-color:#0CF;	
+}
+
+/*style the sub menu*/
+.myMenu li ul {
+	position:absolute;
+	visibility:hidden;
+	border-top:1px solid #fff;
+	margin:0;
+	padding:0;
+	z-index:1000;
+}
+
+.myMenu li ul li {
+	display:inline;
+	float:none;
+}
+
+.myMenu li ul li a:link, .myMenu li ul li a:visited {
+	background-color:#09F;
+	width:auto;
+}
+
+.myMenu li ul li a:hover {
+	background-color:#0CF;	
+}
+
+#container{
+	width:50%;
+	height: auto;
+	float:left;
+	clear:left;
+}
+
+#container ul{
+	width:100%;
+	list-style:none outside none;
+	position:relative;
+}
+
+#container li:first-child{
+	display:list-item;
+	position:relative;
+}
+
+#container li{
+	position:relative;
+	display:none;
+}
+
+.slide{
+	position:absolute;
+	width: 50%;
+}
