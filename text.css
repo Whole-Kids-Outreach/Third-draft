@@ -66,6 +66,10 @@ width: 19.5%;
 background-color: #DBDBDB;
 }
 
+@media screen and (min-width: 0px) and (max-width: 720px){
+	.mobile-hide{display:none;
+}
+
 #sharebuttons{
 	clear: both;
 	margin-left: 50%;
