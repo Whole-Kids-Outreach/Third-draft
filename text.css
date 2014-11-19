@@ -13,6 +13,7 @@ margin: 15px 15px 15px 15px;
 padding: 10px 10px 10px 10px;
 background-color: white;
 font-family: sans-serif;
+clear:left;
 }
 
 /*style for accordion content*/
@@ -66,8 +67,8 @@ width: 19.5%;
 background-color: #DBDBDB;
 }
 
-@media screen and (min-width: 0px) and (max-width: 720px){
-	.mobile-hide{display:none;
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  .mobile-hide{ display: none; }
 }
 
 #sharebuttons{
@@ -149,7 +150,7 @@ border: 0 0 0 0;
 	width:50%;
 	height: auto;
 	float:left;
-	clear:left;
+	clear:both;
 }
 
 #container ul{
