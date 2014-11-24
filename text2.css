@@ -24,7 +24,7 @@ clear:left;
 #content{
 text-align:center;
 width: 70%;
-float: left;
+float: left; 
 margin:10px 10px 10px 2%;
 padding: 10px 10px 10px 10px;
 background-color: #DBDBDB;
