@@ -1,53 +1,39 @@
-$(document).ready(function() {
-	$(document).ready(function() {
-		$('.myMenu > li').bind('mouseover', openSubMenu);
-		$('.myMenu > li').bind('mouseout', closeSubMenu);
+$(function(){
+	//Menu script starts here
+	$('.myMenu > li').bind('mouseover', openSubMenu);
+	$('.myMenu > li').bind('mouseout', closeSubMenu);
 		
-		function openSubMenu() {
-			$(this).find('ul').css('visibility', 'visible');	
-		};
+	function openSubMenu() {
+		$(this).find('ul').css('visibility', 'visible');	
+	};
 		
-		function closeSubMenu() {
-			$(this).find('ul').css('visibility', 'hidden');	
-		};
-				   
+	function closeSubMenu() {
+		$(this).find('ul').css('visibility', 'hidden');	
+	};
+	//Menu script ends here.
+	
+	//Image carousel script starts here.
+	$('#play').click(function() { $('#slider').cycle('resume'); return false; });
+		
+		$('#pause').click(function() { $('#slider').cycle('pause'); return false; });
+
+	$('#slider').cycle({
+		
+		fx:			'scrollHorz',
+		next:		'#next',
+		prev:		'#prev',
+		pager:		'#pager',
+		timeout:	5000,
+		speed:		900
+		
 	});
-	
-	
-	
+	//Image carousel script ends here.
 });
-
-$(window).load(function(){
-		var pages = $('#container li'), current=0;
-		var currentPage,nextPage;
-		var timeoutID;
+	
+	
+	
 
 
-		var handler2=function(){
-			currentPage= pages.eq(current);
-			if (current >= pages.length-1)
-				current=0;
-			else
-				current=current+1;
-			nextPage = pages.eq(current);	
-			currentPage.fadeTo('slow',0.3,function(){
-				nextPage.fadeIn('slow',function(){
-					nextPage.css("opacity",1);
-					currentPage.hide();
-					currentPage.css("opacity",1);				
-				});	
-			});
-			timeoutID=setTimeout(function(){
-				handler2();	
-			}, 4000);
-			
-		}
-
-		timeoutID=setTimeout(function(){
-			handler2();	
-			}, 4000);
-		
-});
 
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
