@@ -145,31 +145,135 @@ border: 0 0 0 0;
 .myMenu li ul li a:hover {
 	background-color:#0CF;	
 }
-
-#container{
-	width:50%;
-	height: auto;
-	float:left;
-	clear:both;
+/*Menu CSS ends here ===================*/
+/*Carousel CSS Starts here*/
+#carousel {
+	width: 720px; //set to width of images to display
+	height: 480px; //set to height of images to display
+	display: block;
+	position: relative;
+	margin: auto;
+	float: left;
 }
 
-#container ul{
-	width:100%;
-	list-style:none outside none;
-	position:relative;
+#slider {
+	width: 720px;
+	height: 480px;
+	display: block;
+	position: absolute;
+	overflow: hidden;
 }
 
-#container li:first-child{
-	display:list-item;
-	position:relative;
+.info {
+	width: 720px;
+	height: 80px;
+	display: block;
+	position: relative;
+	bottom: 100px;
+	background: rgba(30,30,30,.4);
+	z-index: 99;
 }
 
-#container li{
-	position:relative;
-	display:none;
+.info h2 {
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #FFF;
+	padding: 15px 0 0 20px;
 }
 
-.slide{
-	position:absolute;
-	width: 50%;
+.info p {
+	font-family: sans-serif;
+	font-size: 15px;
+	font-weight: ligher;
+	color: #FFF;
+	padding: 0 0 0 20px;
+	line-height: 1px;
 }
+
+#play {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 44px;
+	background: rgba(30,30,30,.4);
+	color: #FFF;
+	cursor: pointer;
+	z-index: 999;
+	transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+}
+
+#pause {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 88px;
+	background: rgba(30,30,30,.4);
+	color: #FFF;
+	cursor: pointer;
+	z-index: 999;
+	transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+}
+#next {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: rgba(30,30,30,.4);
+	color: #FFF;
+	cursor: pointer;
+	z-index: 999;
+}
+#prev {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 133px;
+	background: rgba(30,30,30,.4);
+	color: #FFF;
+	cursor: pointer;
+	z-index: 999;
+}
+
+#pager {
+	width: 100%;
+	text-align: center;
+	display: block;
+	position: absolute;
+	cursor: pointer;
+	z-index: 999;
+}
+
+#pager a {
+	font-size: .0em;
+	color: transparent;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	position: relative;
+	border: 1px solid #FFF;
+	border-radius: 20px;
+	background: transparent;
+	margin: 10px;
+}
+
+#pager a.activeSlide { background: rgba(255,255,255,.6);}
+/*Carousel CSS ends here===============*/
